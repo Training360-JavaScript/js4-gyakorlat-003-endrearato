@@ -23,5 +23,5 @@ const startFetch = async (url = '') => {
  * CSAK A 26. SORBAN DOLGOZZ!
  */
 export {
-    
+    startFetch,
 }

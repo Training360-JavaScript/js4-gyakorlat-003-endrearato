@@ -31,6 +31,24 @@
  * üres tömbbel
  */
 
+ async function getProducts(url){
+    try {const response = await fetch(url)
+     const result = await response.json()
+     console.log(result)
+  
+     if (result.price > 25){
+         //success(result)
+        console.log(result)}
+  }
+     catch (error){
+         console.error(error)
+     }
+  }
+
 /**
  * TODO: exportáld ki helyesen a getProducts függvényt!
  */
+
+ export {
+    getProducts,
+}
