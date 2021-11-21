@@ -25,12 +25,17 @@
  * üres tömbbel
  */
  const getMovies = async (url = '') => {
-    
-};
+     try {const response = await fetch('')
+    const data = await response.json();
+    return data;
+ }
+    catch (error){
+    console.log(error)
+}}
 
 /**
  * TODO: exportáld ki helyesen a getMovies függvényt!
  */
 export {
-    
+    getMovies,
 }
